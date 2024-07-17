@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KOLeRH7Bfgk=",
+  "dgSpecHash": "ybY8vC+AWbs=",
   "success": true,
-  "projectFilePath": "D:\\Development\\C#\\ConsoleProjects\\ZooSimulator\\ZooSimulator.csproj",
+  "projectFilePath": "D:\\Development\\C#\\ConsoleProjects\\ConsoleZooSimulator\\src\\ZooSimulator.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

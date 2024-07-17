@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Development\\C#\\ConsoleProjects\\ZooSimulator\\ZooSimulator.csproj": {}
+    "D:\\Development\\C#\\ConsoleProjects\\ConsoleZooSimulator\\src\\ZooSimulator.csproj": {}
   },
   "projects": {
-    "D:\\Development\\C#\\ConsoleProjects\\ZooSimulator\\ZooSimulator.csproj": {
+    "D:\\Development\\C#\\ConsoleProjects\\ConsoleZooSimulator\\src\\ZooSimulator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Development\\C#\\ConsoleProjects\\ZooSimulator\\ZooSimulator.csproj",
+        "projectUniqueName": "D:\\Development\\C#\\ConsoleProjects\\ConsoleZooSimulator\\src\\ZooSimulator.csproj",
         "projectName": "ZooSimulator",
-        "projectPath": "D:\\Development\\C#\\ConsoleProjects\\ZooSimulator\\ZooSimulator.csproj",
+        "projectPath": "D:\\Development\\C#\\ConsoleProjects\\ConsoleZooSimulator\\src\\ZooSimulator.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\Development\\C#\\ConsoleProjects\\ZooSimulator\\obj\\",
+        "outputPath": "D:\\Development\\C#\\ConsoleProjects\\ConsoleZooSimulator\\src\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
