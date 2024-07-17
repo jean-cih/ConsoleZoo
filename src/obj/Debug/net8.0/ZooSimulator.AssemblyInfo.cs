@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZooSimulator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e14f33c93e8413421b35a47c5761906f162b356b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e109d15f3dea58c8d78538a27586380da18c688")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZooSimulator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZooSimulator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

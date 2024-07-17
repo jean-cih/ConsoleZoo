@@ -17,7 +17,7 @@
         public void AddEnclosure(Enclosure enclosure)
         {
             Enclosures.Add(enclosure);
-            Console.WriteLine($"\nEnclosure {enclosure.Name} is added to {Name}\n");
+            Console.WriteLine($"\n\tEnclosure {enclosure.Name} is added to {Name}\n");
         }
 
         public int GetAnimalCount()

@@ -1,6 +1,4 @@
-﻿using System.Threading.Channels;
-
-namespace ZooSimulator
+﻿namespace ZooSimulator
 {
     internal class Program
     {
@@ -33,74 +31,77 @@ namespace ZooSimulator
 
                 Enclosure Enclosure = new Enclosure(enclosure, int.Parse(size[0]), int.Parse(size[1]), type);
 
-                Instruction instruction = new Instruction();
-                instruction.PrintTypeAnimals();
-                Console.Write("\t\tSelect all the species you want: ");
+                Instruction instructionAnimals = new Instruction();
+                instructionAnimals.PrintTypeAnimals();
+                Console.Write("\tSelect all the species you want: ");
                 string? speciesQuantity = Console.ReadLine();
                 string[] quantityAnimals = speciesQuantity.Split(' ');
                 foreach (var singleQuantity in quantityAnimals) 
                 {
-                    Console.Write($"\tHow much {instruction.Animals[int.Parse(singleQuantity) - 1]} you want in the enclosure: ");
+                    Console.Write($"\tHow much {instructionAnimals.Animals[int.Parse(singleQuantity) - 1]} you want in the enclosure: ");
                     int quantityBeast = int.Parse(Console.ReadLine());
 
                     for (int y = 0; y < quantityBeast; y++)
                     {
-                        Console.Write($"\tGive the {y + 1}. {instruction.Animals[int.Parse(singleQuantity) - 1]} a name: ");
+                        Console.Write($"\tGive the {y + 1}. {instructionAnimals.Animals[int.Parse(singleQuantity) - 1]} a name: ");
                         string? name = Console.ReadLine();
                         Console.Write("\tHow old is they: ");
                         int old = int.Parse(Console.ReadLine());
-                        Console.Write("\tWhat gender is they: ");
+                        Console.Write("\tWhat gender is they male/female: ");
                         string? gender = Console.ReadLine();
                         Console.Write("\tWhere does they live: ");
                         string? placeLive = Console.ReadLine();
                         Console.Write("\tWhat the type of food does they eats: ");
                         string? food = Console.ReadLine();
-                        Console.Write("\tIs they dangerous: ");
+                        Console.Write("\tIs they dangerous yes/no: ");
                         string? answer = Console.ReadLine();
 
                         bool isDangerous = false;
-                        if (answer.ToLower() == "yes" || answer.ToLower() == "yeah" || answer.ToLower() == "yep")
+                        if (answer.ToLower() == "yes")
                             isDangerous = true;
 
-                        Animal animal = new Animal(instruction.Animals[int.Parse(singleQuantity) - 1], name, old, gender, placeLive, food, isDangerous);
+                        Animal animal = new Animal(instructionAnimals.Animals[int.Parse(singleQuantity) - 1], name, old, gender, placeLive, food, isDangerous);
 
                         Enclosure.AddAnimal(animal);
 
                     }
                 }
-                        Plant bushOne = new Plant("Bush", 2, 3, 1);
-                        Plant bushTwo = new Plant("Bush", 3, 1, 1);
-                        Enclosure.AddPlant(bushOne);
-                        Enclosure.AddPlant(bushTwo);
+
+                Instruction instructionPlants = new Instruction();
+                instructionPlants.PrintTypePlants();
+                Console.Write("\tSelect all the plants you want: ");
+                string? quantityTypes = Console.ReadLine();
+                string[] quantityPlants = quantityTypes.Split(' ');
+                string symbolsPlants = "";
+                foreach (var singleQuantity in quantityPlants)
+                {
+                    Console.Write($"\tHow much {instructionPlants.Plants[int.Parse(singleQuantity) - 1]} you want in the enclosure: ");
+                    int quantityGreen = int.Parse(Console.ReadLine());
+
+                    for (int y = 0; y < quantityGreen; y++)
+                    {
+                        Console.Write("\tSize of the plant: ");
+                        string widthAndHeightPlant = Console.ReadLine();
+                        string[] sizePlant = widthAndHeightPlant.Split(' ');
+                        Console.Write("\tAge of the plant: ");
+                        int age = int.Parse(Console.ReadLine());
+
+                        Plant plant = new Plant(instructionPlants.Plants[int.Parse(singleQuantity) - 1], int.Parse(sizePlant[0]), int.Parse(sizePlant[1]), age);
+                        TypePlant typePlant = new TypePlant(instructionPlants.Plants[int.Parse(singleQuantity) - 1], int.Parse(sizePlant[0]), int.Parse(sizePlant[1]), age);
+                        symbolsPlants += typePlant.Symbol;
+                        Enclosure.AddPlant(plant);
+                    }
+                }
 
                 myZoo.AddEnclosure(Enclosure);
 
                 Enclosure.FillEnclosure();
+                for(int q = 0; q < symbolsPlants.Length; q++)
+                    Enclosure.PrintPlants(symbolsPlants[q]);
+                Enclosure.PrintAnimal();
 
                 Enclosure.PrintAnimalsList();
             }
-
-            //Plant bushOne = new Plant("Bush", 2, 3, 1);
-            //Plant bushTwo = new Plant("Bush", 3, 1, 1);
-            Plant bushThree = new Plant("Bush", 3, 4, 1);
-            Plant bushFour = new Plant("Bush", 2, 2, 1);
-            Plant bushFive = new Plant("Bush", 2, 3, 1);
-            Plant bushSix = new Plant("Bush", 1, 1, 1);
-            Plant bushSeven = new Plant("Bush", 1, 1, 1);
-            Plant bushEight = new Plant("Bush", 1, 1, 1);
-
-            /*
-
-            Enclosure.AddPlant(bushOne);
-            Enclosure.AddPlant(bushTwo); 
-            Enclosure.AddPlant(bushThree);
-            Enclosure.AddPlant(bushFour);
-            Enclosure.AddPlant(bushFive);
-            Enclosure.AddPlant(bushSix);
-            Enclosure.AddPlant(bushSeven);
-            Enclosure.AddPlant(bushEight);
-            */
-
 
             Console.SetWindowSize(200, 49);
             Console.CursorVisible = false;

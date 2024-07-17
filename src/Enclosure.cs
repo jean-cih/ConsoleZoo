@@ -27,24 +27,24 @@
         public void AddAnimal(Animal animal)
         {
             Animals.Add(animal);
-            Console.WriteLine($"The {animal.Species} is added to {Name}");
+            Console.WriteLine($"\tThe {animal.Species} is added to {Name}");
         }
 
         public void RemoveAnimal(Animal animal)
         {
             Animals.Remove(animal);
-            Console.WriteLine($"The Animal {animal.Species} is removed to {Name}");
+            Console.WriteLine($"\tThe Animal {animal.Species} is removed to {Name}");
         }
         public void AddPlant(Plant plant)
         {
             Plants.Add(plant);
-            Console.WriteLine($"The {plant.Type} is added to {Name}");
+            Console.WriteLine($"\tThe {plant.Type} is added to {Name}");
         }
 
         public void RemovePlant(Plant plant)
         {
             Plants.Remove(plant);
-            Console.WriteLine($"The {plant.Type} is removed to {Name}");
+            Console.WriteLine($"\tThe {plant.Type} is removed to {Name}");
         }
 
         public void PrintAnimalsList() 
@@ -76,9 +76,7 @@
                 }
             }
 
-            PrintEnclosure(enclosure);
-            PrintPlants();
-            PrintAnimal();
+            PrintEnclosure(enclosure);  
         }
 
         public void PrintEnclosure(char[,] enclosure)
@@ -99,7 +97,7 @@
         }
 
 
-        public void PrintPlants()
+        public void PrintPlants(char symbol)
         {
             for (int k = 0; k < Plants.Count; k++)
             {
@@ -113,8 +111,8 @@
                 {
                     for (int j = 0; j < Plants[k].Height; j++)
                     {
-                        Console.SetCursorPosition(j + positionY, i + positionX + 6 * Animals.Count + 4 * Plants.Count + 20);
-                        Console.Write('o');
+                        Console.SetCursorPosition(j + positionY, i + positionX + 6 * Animals.Count + 2 * Plants.Count + 43);
+                        Console.Write(symbol);
                     }
                     Console.WriteLine();
                 }
@@ -130,7 +128,7 @@
 
                 Console.ForegroundColor = ConsoleColor.Red;
 
-                Console.SetCursorPosition(positionY, positionX + 6 * Animals.Count + 4 * Plants.Count + 20);
+                Console.SetCursorPosition(positionY, positionX + 6 * Animals.Count + 2 * Plants.Count + 43);
                 Console.Write(Animals[k].Species[0]);
             }
         }

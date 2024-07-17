@@ -15,4 +15,19 @@
             Age = age;
         }
     }
+
+    public class TypePlant : Plant
+    {
+        public char Symbol {  get; set; }
+        public TypePlant(string type, int width, int height, int age) : base(type, width, height, age)
+        {
+            if (type == "Little Bush" || type == "Middle Bush" || type == "Big Bush")
+                Symbol = 'o';
+            else if (type == "Grass")
+                Symbol = '*';
+            else
+                Symbol = '^';
+        }
+    }
+
 }
