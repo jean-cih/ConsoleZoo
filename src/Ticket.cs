@@ -2,8 +2,8 @@
 {
     public class Ticket
     {
-        public string type;
-        public decimal price;
+        private string type;
+        private decimal price;
 
         public string Type
         {
@@ -17,10 +17,12 @@
             get { return type; }
         }
 
+        public decimal Price { get; set; }
+
         public Ticket(string type, decimal price)
         {
             Type = type;
-            this.price = price;
+            Price = price;
         }
     }
 }

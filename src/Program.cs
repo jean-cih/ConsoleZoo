@@ -56,11 +56,7 @@
                         Console.Write("\tIs they dangerous yes/no: ");
                         string? answer = Console.ReadLine();
 
-                        bool isDangerous = false;
-                        if (answer.ToLower() == "yes")
-                            isDangerous = true;
-
-                        Animal animal = new Animal(instructionAnimals.Animals[int.Parse(singleQuantity) - 1], name, old, gender, placeLive, food, isDangerous);
+                        Animal animal = new Animal(instructionAnimals.Animals[int.Parse(singleQuantity) - 1], name, old, gender, placeLive, food, answer);
 
                         Enclosure.AddAnimal(animal);
 
@@ -86,10 +82,10 @@
                         Console.Write("\tAge of the plant: ");
                         int age = int.Parse(Console.ReadLine());
 
-                        Plant plant = new Plant(instructionPlants.Plants[int.Parse(singleQuantity) - 1], int.Parse(sizePlant[0]), int.Parse(sizePlant[1]), age);
+                        Plant plant = new Plant(instructionPlants.Plants[int.Parse(singleQuantity) - 1], age);
                         TypePlant typePlant = new TypePlant(instructionPlants.Plants[int.Parse(singleQuantity) - 1], int.Parse(sizePlant[0]), int.Parse(sizePlant[1]), age);
                         symbolsPlants += typePlant.Symbol;
-                        Enclosure.AddPlant(plant);
+                        Enclosure.AddPlant(typePlant);
                     }
                 }
 

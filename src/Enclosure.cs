@@ -2,26 +2,56 @@
 {
     public class Enclosure
     {
-        public string? Name { get; set; }
-        public int Width { get; set; }
-        public int Height { get; set; }
-        public string? Type { get; set; }
+        private string name;
+        private int width;
+        private int height;
+        private string type;
+
+        public string Name { get; set; }
+        public int Width
+        {
+            get { return width; }
+            set
+            {
+                if(value >= 10)
+                    width = value;
+                else
+                    Console.WriteLine("Too little width of the enclosure");
+            }
+        }
+        public int Height
+        {
+            get { return height; }
+            set
+            {
+                if (value >= 10)
+                    height = value;
+                else
+                    Console.WriteLine("Too little height of the enclosure");
+            }
+        }
+        public string Type
+        {
+            get { return type; }
+            set
+            {
+                if(value.ToLower() == "open" || value.ToLower() == "close" || value.ToLower() == "aquarium")
+                    type = value;
+                else
+                    Console.WriteLine("Incorrect type of the enclosure");
+            }
+        }
         public List<Animal>? Animals { get; set; }
-        public List<Plant> Plants { get; set; }
+        public List<TypePlant> Plants { get; set; }
 
         public Enclosure(string name, int width, int height, string type)
         {
-            if (type.ToLower() == "open" || type.ToLower() == "close" || type.ToLower() == "aquarium")
-            {
-                Name = name;
-                Width = width;
-                Height = height;
-                Type = type;
-                Animals = new List<Animal>();
-                Plants = new List<Plant>();
-            }
-            else
-                Console.WriteLine("This type doesn't exist");
+            Name = name;
+            Width = width;
+            Height = height;
+            Type = type;
+            Animals = new List<Animal>();
+            Plants = new List<TypePlant>();
         }
 
         public void AddAnimal(Animal animal)
@@ -35,13 +65,13 @@
             Animals.Remove(animal);
             Console.WriteLine($"\tThe Animal {animal.Species} is removed to {Name}");
         }
-        public void AddPlant(Plant plant)
+        public void AddPlant(TypePlant plant)
         {
             Plants.Add(plant);
             Console.WriteLine($"\tThe {plant.Type} is added to {Name}");
         }
 
-        public void RemovePlant(Plant plant)
+        public void RemovePlant(TypePlant plant)
         {
             Plants.Remove(plant);
             Console.WriteLine($"\tThe {plant.Type} is removed to {Name}");

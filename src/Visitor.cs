@@ -8,15 +8,30 @@ namespace ZooSimulator
 {
     public class Visitor
     {
-        public string? name;
-        public int age;
-        public Ticket? ticket;
+        private string name;
+        private int age;
+        private Ticket ticket;
 
-        public Visitor(string? name, int age, Ticket? ticket)
+        public string Name { get; set; }
+        public int Age
         {
-            this.name = name;
-            this.age = age;
-            this.ticket = ticket;
+            get { return age; }
+            set
+            {
+                if(value > 0)
+                    age = value;
+                else
+                    Console.WriteLine("Incorrect age");
+            }
+        }
+
+        public Ticket Ticket { get; set; }
+
+        public Visitor(string name, int age, Ticket ticket)
+        {
+            Name = name;
+            Age = age;
+            Ticket = ticket;
         }
 
         public void EnterZoo()

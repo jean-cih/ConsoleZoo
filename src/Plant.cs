@@ -1,33 +1,39 @@
-﻿namespace ZooSimulator
+﻿using System.ComponentModel.DataAnnotations;
+using System.Runtime.CompilerServices;
+
+namespace ZooSimulator
 {
     public class Plant
     {
-        public string Type {  get; set; }
-        public int Width { get; set; }
-        public int Height { get; set; }
-        public int Age { get; set; }
+        private string type;
+        private int age;
+        public string Type 
+        { 
+            get { return type; } 
+            set
+            {
+                if (value.Contains("Bush") || value.Contains("Tree") || value == "Grass")
+                    type = value;
+                else
+                    Console.WriteLine("This Plant doesn't exist");
+            } 
+        }
+        public int Age
+        {
+            get { return age; }
+            set
+            {
+                if (value >= 0)
+                    age = value;
+                else
+                    Console.WriteLine("Incorrect age");
+            }
+        }
 
-        public Plant(string type, int width, int height, int age)
+        public Plant(string type, int age)
         {
             Type = type;
-            Width = width;
-            Height = height;
             Age = age;
         }
     }
-
-    public class TypePlant : Plant
-    {
-        public char Symbol {  get; set; }
-        public TypePlant(string type, int width, int height, int age) : base(type, width, height, age)
-        {
-            if (type == "Little Bush" || type == "Middle Bush" || type == "Big Bush")
-                Symbol = 'o';
-            else if (type == "Grass")
-                Symbol = '*';
-            else
-                Symbol = '^';
-        }
-    }
-
 }

@@ -2,6 +2,7 @@
 {
     public class Zoo
     {
+        private string name;
         public string Name { get; set; }
         public List<Enclosure> Enclosures {  get; set; }
         public List<Visitor> Visitors {  get; set; }
