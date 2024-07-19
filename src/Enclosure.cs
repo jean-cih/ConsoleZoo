@@ -79,13 +79,13 @@
 
         public void PrintAnimalsList() 
         {
-            Console.SetCursorPosition(55, 52);
+            Console.SetCursorPosition(55, Width + 5);
             Console.ForegroundColor = ConsoleColor.Magenta;
             Console.WriteLine("There are animals at the Zoo now:");
             Console.ForegroundColor = ConsoleColor.Yellow;
             for (int i = 0; i < Animals.Count; i++)
             {
-                Console.SetCursorPosition(64, 54 + i);
+                Console.SetCursorPosition(64, Width + 7 + i);
                 Console.WriteLine($"{i + 1}. {Animals[i].Species} - {Animals[i].Name}");
             }
         }
@@ -141,7 +141,7 @@
                 {
                     for (int j = 0; j < Plants[k].Height; j++)
                     {
-                        Console.SetCursorPosition(j + positionY, i + positionX + 6 * Animals.Count + 2 * Plants.Count + 43);
+                        Console.SetCursorPosition(j + positionY, i + positionX + Animals.Count + Plants.Count);
                         Console.Write(symbol);
                     }
                     Console.WriteLine();
@@ -158,7 +158,7 @@
 
                 Console.ForegroundColor = ConsoleColor.Red;
 
-                Console.SetCursorPosition(positionY, positionX + 6 * Animals.Count + 2 * Plants.Count + 43);
+                Console.SetCursorPosition(positionY, positionX + Animals.Count + Plants.Count);
                 Console.Write(Animals[k].Species[0]);
             }
         }

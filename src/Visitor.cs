@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ZooSimulator
+﻿namespace ZooSimulator
 {
     public class Visitor
     {
@@ -36,17 +30,17 @@ namespace ZooSimulator
 
         public void EnterZoo()
         {
-
+            Console.WriteLine($"{Name} entered the enclosure");
         }
 
         public void VisitEnclosure(Enclosure enclosure)
         {
-
+            Console.WriteLine($"{Name} visited the enclosure");
         }
 
         public void ExitZoo()
         {
-
+            Console.WriteLine($"{Name} left the enclosure");
         }
     }
 }

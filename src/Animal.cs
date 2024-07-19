@@ -1,9 +1,4 @@
-﻿using System.IO.Compression;
-using System.IO;
-using System.Runtime.CompilerServices;
-using System;
-
-namespace ZooSimulator
+﻿namespace ZooSimulator
 {
     public class Animal
     {
@@ -82,12 +77,12 @@ namespace ZooSimulator
 
         public void Eat()
         {
-
+            Console.WriteLine($"{Name} is eating {Food}");
         }
 
         public void Move()
         {
-
+            Console.WriteLine($"{Name} is moving around the enclosure");
         }
     }
 }
