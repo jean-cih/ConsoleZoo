@@ -48,14 +48,6 @@ D:\Development\C#\ConsoleProjects\ConsoleZooSimulator\src\bin\Debug\net8.0\ZooSi
 D:\Development\C#\ConsoleProjects\ConsoleZooSimulator\src\bin\Debug\net8.0\ZooSimulator.runtimeconfig.json
 D:\Development\C#\ConsoleProjects\ConsoleZooSimulator\src\bin\Debug\net8.0\ZooSimulator.dll
 D:\Development\C#\ConsoleProjects\ConsoleZooSimulator\src\bin\Debug\net8.0\ZooSimulator.pdb
-D:\Development\C#\ConsoleProjects\ConsoleZooSimulator\src\obj\Debug\net8.0\Interop.WMPNSSCI.dll
-D:\Development\C#\ConsoleProjects\ConsoleZooSimulator\src\obj\Debug\net8.0\Interop.WMPNSSCDS.dll
-D:\Development\C#\ConsoleProjects\ConsoleZooSimulator\src\obj\Debug\net8.0\Interop.WMPLib.dll
-D:\Development\C#\ConsoleProjects\ConsoleZooSimulator\src\obj\Debug\net8.0\Interop.WMLSS.dll
-D:\Development\C#\ConsoleProjects\ConsoleZooSimulator\src\obj\Debug\net8.0\Interop.MediaPlayer.dll
-D:\Development\C#\ConsoleProjects\ConsoleZooSimulator\src\obj\Debug\net8.0\Interop.WMPDXMLib.dll
-D:\Development\C#\ConsoleProjects\ConsoleZooSimulator\src\obj\Debug\net8.0\Interop.WMPLauncher.dll
-D:\Development\C#\ConsoleProjects\ConsoleZooSimulator\src\obj\Debug\net8.0\ZooSimulator.csproj.ResolveComReference.cache
 D:\Development\C#\ConsoleProjects\ConsoleZooSimulator\src\obj\Debug\net8.0\ZooSimulator.GeneratedMSBuildEditorConfig.editorconfig
 D:\Development\C#\ConsoleProjects\ConsoleZooSimulator\src\obj\Debug\net8.0\ZooSimulator.AssemblyInfoInputs.cache
 D:\Development\C#\ConsoleProjects\ConsoleZooSimulator\src\obj\Debug\net8.0\ZooSimulator.AssemblyInfo.cs
@@ -66,3 +58,9 @@ D:\Development\C#\ConsoleProjects\ConsoleZooSimulator\src\obj\Debug\net8.0\refin
 D:\Development\C#\ConsoleProjects\ConsoleZooSimulator\src\obj\Debug\net8.0\ZooSimulator.pdb
 D:\Development\C#\ConsoleProjects\ConsoleZooSimulator\src\obj\Debug\net8.0\ZooSimulator.genruntimeconfig.cache
 D:\Development\C#\ConsoleProjects\ConsoleZooSimulator\src\obj\Debug\net8.0\ref\ZooSimulator.dll
+D:\Development\C#\ConsoleProjects\ConsoleZooSimulator\src\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\Development\C#\ConsoleProjects\ConsoleZooSimulator\src\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+D:\Development\C#\ConsoleProjects\ConsoleZooSimulator\src\obj\Debug\net8.0\ZooSimulator.csproj.AssemblyReference.cache
+D:\Development\C#\ConsoleProjects\ConsoleZooSimulator\src\obj\Debug\net8.0\ZooSimul.35D58DC9.Up2Date
+D:\Development\C#\ConsoleProjects\ConsoleZooSimulator\src\obj\Debug\net8.0\ZooSimulator.Properties.Resources.resources
+D:\Development\C#\ConsoleProjects\ConsoleZooSimulator\src\obj\Debug\net8.0\ZooSimulator.csproj.GenerateResource.cache

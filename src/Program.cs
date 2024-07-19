@@ -1,4 +1,8 @@
-﻿namespace ZooSimulator
+﻿using System.Reflection;
+using System.Security.Cryptography;
+using System.Xml.Linq;
+
+namespace ZooSimulator
 {
     internal class Program
     {
@@ -57,8 +61,8 @@
                         string? answer = Console.ReadLine();
 
                         Animal animal = new Animal(instructionAnimals.Animals[int.Parse(singleQuantity) - 1], name, old, gender, placeLive, food, answer);
-
                         Enclosure.AddAnimal(animal);
+                        animal.MakeSound();
 
                     }
                 }

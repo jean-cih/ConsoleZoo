@@ -4,7 +4,7 @@ namespace ZooSimulator
 {
     public class Instruction
     {
-        public string[] Animals = new string[] { "Lion", "Zebra", "Elephant", "Cheetah", "Tiger", "Platypus", "Bear", "Ape", "Shark", "Tuna", "Turtle", "Penguin" };
+        public string[] Animals = new string[] { "Lion", "Zebra", "Elephant", "Cheetah", "Tiger", "Platypus", "Bear", "Ape", "Camel", "Squirrel", "Turtle", "Penguin" };
         public string[] Plants = new string[] { "Little Bush", "Middle Bush", "Big Bush", "Grass", "Little Tree", "Middle Tree", "Big Tree" };
         public void PrintTypeAnimals()
         {

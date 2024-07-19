@@ -1,4 +1,9 @@
-﻿namespace ZooSimulator
+﻿using System.IO.Compression;
+using System.IO;
+using System.Runtime.CompilerServices;
+using System;
+
+namespace ZooSimulator
 {
     public class Animal
     {
@@ -27,7 +32,7 @@
             get { return gender; }
             set
             {
-                if(value.ToLower() == "value" || value.ToLower() == "female")
+                if(value.ToLower() == "male" || value.ToLower() == "female")
                     gender = value;
                 else
                     Console.WriteLine("Incorrect gender");
@@ -35,7 +40,7 @@
         }
         public string Habitat { get; set; }
         public string Food { get; set; }
-        public bool IsDangerous { get; set; }
+        public bool IsDangerous { get; set; } = false;
 
         public Animal(string species, string name, int age, string gender, string habitat, string food, string isDangerous)
         {
@@ -47,14 +52,33 @@
             Food = food;
             if(isDangerous == "yes")
                 IsDangerous = true;
-            else
+            else if(isDangerous == "no")
                 IsDangerous = false;
+            else
+                Console.WriteLine("Incorrect status");
         }
 
         public void MakeSound()
         {
+            /*
+            using (FileStream fileIn = File.OpenRead(@"D:\Music\FuckSleep.mp3"))
+            using (FileStream fileOut = File.Create(@"D:\Music\sound.gz"))
+            using (GZipStream gz = new GZipStream(fileOut, CompressionLevel.Optimal))
+                fileIn.CopyTo(gz);
 
+            using (MemoryStream fileOut = new MemoryStream(Properties.Resources.sound))
+            using (GZipStream gz = new GZipStream(fileOut, CompressionMode.Decompress))
+                new SoundPlayer(gz).Play();
+            */
+
+            Console.WriteLine($"This is what a {Species} sounds like");
+            SoundPlayer player = new SoundPlayer(@$"D:\Development\C#\ConsoleProjects\ConsoleZooSimulator\src\Resources\{Species}.wav");
+            player.Play();
+            Console.WriteLine("\nTap any button to stop this sound");
+            Console.ReadLine();
+            player.Stop();
         }
+
 
         public void Eat()
         {

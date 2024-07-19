@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ybY8vC+AWbs=",
+  "dgSpecHash": "W/cjEO+uMGw=",
   "success": true,
   "projectFilePath": "D:\\Development\\C#\\ConsoleProjects\\ConsoleZooSimulator\\src\\ZooSimulator.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ASUS\\.nuget\\packages\\system.windows.extensions\\8.0.0\\system.windows.extensions.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

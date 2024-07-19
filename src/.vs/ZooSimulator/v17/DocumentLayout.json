@@ -7,36 +7,44 @@
       "RelativeMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|solutionrelative:animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|d:\\development\\c#\\consoleprojects\\consolezoosimulator\\src\\enclosure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|solutionrelative:enclosure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|d:\\development\\c#\\consoleprojects\\consolezoosimulator\\src\\instruction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|solutionrelative:instruction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|d:\\development\\c#\\consoleprojects\\consolezoosimulator\\src\\plant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|solutionrelative:plant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|d:\\development\\c#\\consoleprojects\\consolezoosimulator\\src\\usingenabled.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|solutionrelative:usingenabled.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|d:\\development\\c#\\consoleprojects\\consolezoosimulator\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|d:\\development\\c#\\consoleprojects\\consolezoosimulator\\src\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|solutionrelative:ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|d:\\development\\c#\\consoleprojects\\consolezoosimulator\\src\\typeplant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|solutionrelative:typeplant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|d:\\development\\c#\\consoleprojects\\consolezoosimulator\\src\\visitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|solutionrelative:visitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|d:\\development\\c#\\consoleprojects\\consolezoosimulator\\src\\plant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|solutionrelative:plant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|d:\\development\\c#\\consoleprojects\\consolezoosimulator\\src\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|solutionrelative:properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|d:\\development\\c#\\consoleprojects\\consolezoosimulator\\src\\zoo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|solutionrelative:zoo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|d:\\development\\c#\\consoleprojects\\consolezoosimulator\\src\\instruction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|solutionrelative:instruction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|d:\\development\\c#\\consoleprojects\\consolezoosimulator\\src\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|solutionrelative:ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|d:\\development\\c#\\consoleprojects\\consolezoosimulator\\src\\visitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|solutionrelative:visitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|d:\\development\\c#\\consoleprojects\\consolezoosimulator\\src\\enclosure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34B5FD23-15AE-49DE-BE5A-AB830A2CA545}|ZooSimulator.csproj|solutionrelative:enclosure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,46 +66,71 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "D:\\Development\\C#\\ConsoleProjects\\ConsoleZooSimulator\\src\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "Properties\\Resources.resx",
+              "ToolTip": "D:\\Development\\C#\\ConsoleProjects\\ConsoleZooSimulator\\src\\Properties\\Resources.resx",
+              "RelativeToolTip": "Properties\\Resources.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-07-19T05:21:55.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsingEnabled.cs",
+              "DocumentMoniker": "D:\\Development\\C#\\ConsoleProjects\\ConsoleZooSimulator\\src\\UsingEnabled.cs",
+              "RelativeDocumentMoniker": "UsingEnabled.cs",
+              "ToolTip": "D:\\Development\\C#\\ConsoleProjects\\ConsoleZooSimulator\\src\\UsingEnabled.cs",
+              "RelativeToolTip": "UsingEnabled.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T03:30:46.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Animal.cs",
               "DocumentMoniker": "D:\\Development\\C#\\ConsoleProjects\\ConsoleZooSimulator\\src\\Animal.cs",
               "RelativeDocumentMoniker": "Animal.cs",
               "ToolTip": "D:\\Development\\C#\\ConsoleProjects\\ConsoleZooSimulator\\src\\Animal.cs",
               "RelativeToolTip": "Animal.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAoAAAA",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAIwEsAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-19T01:34:30.43Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Plant.cs",
               "DocumentMoniker": "D:\\Development\\C#\\ConsoleProjects\\ConsoleZooSimulator\\src\\Plant.cs",
               "RelativeDocumentMoniker": "Plant.cs",
               "ToolTip": "D:\\Development\\C#\\ConsoleProjects\\ConsoleZooSimulator\\src\\Plant.cs",
               "RelativeToolTip": "Plant.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAQwAIAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-19T01:34:22.476Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "TypePlant.cs",
               "DocumentMoniker": "D:\\Development\\C#\\ConsoleProjects\\ConsoleZooSimulator\\src\\TypePlant.cs",
               "RelativeDocumentMoniker": "TypePlant.cs",
               "ToolTip": "D:\\Development\\C#\\ConsoleProjects\\ConsoleZooSimulator\\src\\TypePlant.cs",
               "RelativeToolTip": "TypePlant.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAYwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-19T01:34:06.684Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Ticket.cs",
               "DocumentMoniker": "D:\\Development\\C#\\ConsoleProjects\\ConsoleZooSimulator\\src\\Ticket.cs",
               "RelativeDocumentMoniker": "Ticket.cs",
@@ -110,13 +143,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Visitor.cs",
               "DocumentMoniker": "D:\\Development\\C#\\ConsoleProjects\\ConsoleZooSimulator\\src\\Visitor.cs",
               "RelativeDocumentMoniker": "Visitor.cs",
               "ToolTip": "D:\\Development\\C#\\ConsoleProjects\\ConsoleZooSimulator\\src\\Visitor.cs",
               "RelativeToolTip": "Visitor.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBoAAAAAAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-19T01:29:40.716Z",
               "EditorCaption": ""
@@ -136,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "Enclosure.cs",
               "DocumentMoniker": "D:\\Development\\C#\\ConsoleProjects\\ConsoleZooSimulator\\src\\Enclosure.cs",
               "RelativeDocumentMoniker": "Enclosure.cs",
@@ -149,13 +182,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "Instruction.cs",
               "DocumentMoniker": "D:\\Development\\C#\\ConsoleProjects\\ConsoleZooSimulator\\src\\Instruction.cs",
               "RelativeDocumentMoniker": "Instruction.cs",
               "ToolTip": "D:\\Development\\C#\\ConsoleProjects\\ConsoleZooSimulator\\src\\Instruction.cs",
               "RelativeToolTip": "Instruction.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAmAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-17T16:08:02.093Z",
               "EditorCaption": ""
@@ -168,7 +201,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Development\\C#\\ConsoleProjects\\ConsoleZooSimulator\\src\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA2AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-17T16:05:32.6Z",
               "EditorCaption": ""
