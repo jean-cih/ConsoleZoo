@@ -3,14 +3,14 @@
 
 
 
-![Image alt](https://github.com/jean-cih/ConsoleZooSimulator/raw/main/materials/FirstMenu.jpg)
+![Image alt](https://github.com/jean-cih/ConsoleZooSimulator/raw/main/materials/FirstMenu.png)
 
-![Image alt](https://github.com/jean-cih/ConsoleZooSimulator/raw/main/materials/FirstPlants.jpg)
+![Image alt](https://github.com/jean-cih/ConsoleZooSimulator/raw/main/materials/FirstPlants.png)
 
-![Image alt](https://github.com/jean-cih/ConsoleZooSimulator/raw/main/materials/FirstEnclosure.jpg)
+![Image alt](https://github.com/jean-cih/ConsoleZooSimulator/raw/main/materials/FirstEnclosure.png)
 
-![Image alt](https://github.com/jean-cih/ConsoleZooSimulator/raw/main/materials/LastMenu.jpg)
+![Image alt](https://github.com/jean-cih/ConsoleZooSimulator/raw/main/materials/LastMenu.png)
 
-![Image alt](https://github.com/jean-cih/ConsoleZooSimulator/raw/main/materials/LastPlants.jpg)
+![Image alt](https://github.com/jean-cih/ConsoleZooSimulator/raw/main/materials/LastPlants.png)
 
-![Image alt](https://github.com/jean-cih/ConsoleZooSimulator/raw/main/materials/LastEnclosure.jpg)
+![Image alt](https://github.com/jean-cih/ConsoleZooSimulator/raw/main/materials/LastEnclosure.png)
