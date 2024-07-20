@@ -14,7 +14,7 @@
                 if (value > 0)
                     width = value;
                 else
-                    Console.WriteLine("Incorrect the width of the plant");
+                    Console.WriteLine("\t\u001b[31mIncorrect the width of the plant");
             }
         }
 
@@ -26,7 +26,7 @@
                 if (value > 0)
                     height = value;
                 else
-                    Console.WriteLine("Incorrect the height of the plant");
+                    Console.WriteLine("\t\u001b[31mIncorrect the height of the plant");
             }
         }
 

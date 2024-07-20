@@ -15,7 +15,7 @@
                 if(value > 0)
                     age = value;
                 else
-                    Console.WriteLine("Incorrect age");
+                    Console.WriteLine("\t\u001b[31mIncorrect age");
             }
         }
 
@@ -30,17 +30,17 @@
 
         public void EnterZoo()
         {
-            Console.WriteLine($"{Name} entered the enclosure");
+            Console.WriteLine($"\t\u001b[31m{Name} entered the enclosure");
         }
 
         public void VisitEnclosure(Enclosure enclosure)
         {
-            Console.WriteLine($"{Name} visited the enclosure");
+            Console.WriteLine($"\t\u001b[31m{Name} visited the enclosure");
         }
 
         public void ExitZoo()
         {
-            Console.WriteLine($"{Name} left the enclosure");
+            Console.WriteLine($"\t\u001b[31m {Name} left the enclosure");
         }
     }
 }

@@ -12,7 +12,7 @@
                 if (value.Contains("Bush") || value.Contains("Tree") || value == "Grass")
                     type = value;
                 else
-                    Console.WriteLine("This Plant doesn't exist");
+                    Console.WriteLine("\t\u001b[31mThis Plant doesn't exist");
             } 
         }
         public int Age
@@ -23,7 +23,7 @@
                 if (value >= 0)
                     age = value;
                 else
-                    Console.WriteLine("Incorrect age");
+                    Console.WriteLine("\t\u001b[31mIncorrect age");
             }
         }
 

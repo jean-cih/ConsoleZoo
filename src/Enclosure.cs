@@ -16,7 +16,7 @@
                 if(value >= 10)
                     width = value;
                 else
-                    Console.WriteLine("Too little width of the enclosure");
+                    Console.WriteLine("\t\u001b[31mToo little width of the enclosure");
             }
         }
         public int Height
@@ -27,7 +27,7 @@
                 if (value >= 10)
                     height = value;
                 else
-                    Console.WriteLine("Too little height of the enclosure");
+                    Console.WriteLine("\t\u001b[31mToo little height of the enclosure");
             }
         }
         public string Type
@@ -38,7 +38,7 @@
                 if(value.ToLower() == "open" || value.ToLower() == "close" || value.ToLower() == "aquarium")
                     type = value;
                 else
-                    Console.WriteLine("Incorrect type of the enclosure");
+                    Console.WriteLine("\t\u001b[31mIncorrect type of the enclosure");
             }
         }
         public List<Animal>? Animals { get; set; }
@@ -57,49 +57,47 @@
         public void AddAnimal(Animal animal)
         {
             Animals.Add(animal);
-            Console.WriteLine($"\tThe {animal.Species} is added to {Name}");
+            Console.WriteLine($"\t\u001b[31mThe {animal.Species} is added to {Name}\n");
         }
 
         public void RemoveAnimal(Animal animal)
         {
             Animals.Remove(animal);
-            Console.WriteLine($"\tThe Animal {animal.Species} is removed to {Name}");
+            Console.WriteLine($"\t\u001b[31mThe Animal {animal.Species} is removed to {Name}\n");
         }
         public void AddPlant(TypePlant plant)
         {
             Plants.Add(plant);
-            Console.WriteLine($"\tThe {plant.Type} is added to {Name}");
+            Console.WriteLine($"\t\u001b[31mThe {plant.Type} is added to {Name}\n");
         }
 
         public void RemovePlant(TypePlant plant)
         {
             Plants.Remove(plant);
-            Console.WriteLine($"\tThe {plant.Type} is removed to {Name}");
+            Console.WriteLine($"\t\u001b[31mThe {plant.Type} is removed to {Name}\n");
         }
 
         public void PrintAnimalsList() 
         {
-            Console.SetCursorPosition(55, Width + 5);
-            Console.ForegroundColor = ConsoleColor.Magenta;
-            Console.WriteLine("There are animals at the Zoo now:");
-            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.SetCursorPosition(Width + 5, Height);
+            Console.WriteLine("\u001b[31mThere are animals at the Zoo now:");
             for (int i = 0; i < Animals.Count; i++)
             {
-                Console.SetCursorPosition(64, Width + 7 + i);
-                Console.WriteLine($"{i + 1}. {Animals[i].Species} - {Animals[i].Name}");
+                Console.SetCursorPosition(Width + 15, Height + 2 + i);
+                Console.WriteLine($"\u001b[31m{i + 1}. {Animals[i].Species} - {Animals[i].Name}");
             }
         }
 
         public void FillEnclosure()
         {
-            char[,] enclosure = new char[Width, Height];
-            for (int i = 0; i < Width; i++)
+            char[,] enclosure = new char[Height, Width];
+            for (int i = 0; i < Height; i++)
             {
-                for (int j = 0; j < Height; j++)
+                for (int j = 0; j < Width; j++)
                 {
-                    if (i == 0 || i == Width - 1)
+                    if (i == 0 || i == Height - 1)
                         enclosure[i, j] = '#';
-                    else if (j == 0 || j == Height - 1)
+                    else if (j == 0 || j == Width - 1)
                         enclosure[i, j] = '#';
                     else
                         enclosure[i, j] = ' ';
@@ -111,15 +109,15 @@
 
         public void PrintEnclosure(char[,] enclosure)
         {
-            Console.WriteLine($"\t\t{Name}");
-            for (int i = 0; i < Width; i++)
+            Console.SetCursorPosition(2 + Width / 2, Height - 1);
+            Console.WriteLine($"\u001b[31m{Name}");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            for (int i = 0; i < Height; i++)
             {
-                for (int j = 0; j < Height; j++)
+                for (int j = 0; j < Width; j++)
                 {
-                    if (enclosure[i, j] == '#')
-                        Console.ForegroundColor = ConsoleColor.DarkGray;
-                    else
-                        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+                    Console.SetCursorPosition(4 + j, Height + i);
                     Console.Write(enclosure[i, j]);
                 }
                 Console.WriteLine();
@@ -137,11 +135,11 @@
 
                 Console.ForegroundColor = ConsoleColor.Green;
 
-                for (int i = 0; i < Plants[k].Width; i++)
+                for (int i = 0; i < Plants[k].Height; i++)
                 {
-                    for (int j = 0; j < Plants[k].Height; j++)
+                    for (int j = 0; j < Plants[k].Width; j++)
                     {
-                        Console.SetCursorPosition(j + positionY, i + positionX + Animals.Count + Plants.Count);
+                        Console.SetCursorPosition(j + positionX + 4, i + positionY + Height);
                         Console.Write(symbol);
                     }
                     Console.WriteLine();
@@ -150,17 +148,20 @@
         }
         public void PrintAnimal()
         {
+            Console.ForegroundColor = ConsoleColor.Red;
+
             for (int k = 0; k < Animals.Count; k++)
             {
                 Random rand = new Random();
                 int positionX = rand.Next(1, Width - 1);
                 int positionY = rand.Next(1, Height - 1);
 
-                Console.ForegroundColor = ConsoleColor.Red;
 
-                Console.SetCursorPosition(positionY, positionX + Animals.Count + Plants.Count);
+                Console.SetCursorPosition(positionX + 4, positionY + Height);
                 Console.Write(Animals[k].Species[0]);
             }
+
+            Console.SetCursorPosition(8, 2 * Height);
         }
     }
 }

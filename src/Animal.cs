@@ -19,7 +19,7 @@
                 if (value > 0)
                     age = value;
                 else
-                    Console.WriteLine("Incorrect age");
+                    Console.WriteLine("\t\u001b[31mIncorrect age");
             }
         }
         public string Gender
@@ -30,7 +30,7 @@
                 if(value.ToLower() == "male" || value.ToLower() == "female")
                     gender = value;
                 else
-                    Console.WriteLine("Incorrect gender");
+                    Console.WriteLine("\t\u001b[31mIncorrect gender");
             }
         }
         public string Habitat { get; set; }
@@ -50,7 +50,7 @@
             else if(isDangerous == "no")
                 IsDangerous = false;
             else
-                Console.WriteLine("Incorrect status");
+                Console.WriteLine("\t\u001b[31mIncorrect status");
         }
 
         public void MakeSound()
@@ -66,10 +66,10 @@
                 new SoundPlayer(gz).Play();
             */
 
-            Console.WriteLine($"This is what a {Species} sounds like");
+            Console.WriteLine($"\t\u001b[31mThis is what a {Species} sounds like");
             SoundPlayer player = new SoundPlayer(@$"D:\Development\C#\ConsoleProjects\ConsoleZooSimulator\src\Resources\{Species}.wav");
             player.Play();
-            Console.WriteLine("\nTap any button to stop this sound");
+            Console.WriteLine("\n\t\u001b[31mTap any button to stop this sound");
             Console.ReadLine();
             player.Stop();
         }
@@ -77,12 +77,12 @@
 
         public void Eat()
         {
-            Console.WriteLine($"{Name} is eating {Food}");
+            Console.WriteLine($"\t\u001b[31m{Name} is eating {Food}");
         }
 
         public void Move()
         {
-            Console.WriteLine($"{Name} is moving around the enclosure");
+            Console.WriteLine($"\t\u001b[31m {Name} is moving around the enclosure");
         }
     }
 }

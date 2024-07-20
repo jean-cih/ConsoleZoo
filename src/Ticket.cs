@@ -12,7 +12,7 @@
                 if (value.ToLower() == "children" || value.ToLower() == "adult" || value.ToLower() == "family")
                     type = value;
                 else
-                    Console.WriteLine("Incorrect type of the ticket");
+                    Console.WriteLine("\t\u001b[31mIncorrect type of the ticket");
             }
             get { return type; }
         }

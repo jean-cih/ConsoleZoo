@@ -6,105 +6,97 @@ namespace ZooSimulator
     {
         static void Main(string[] args)
         {
+            Console.BackgroundColor = ConsoleColor.Cyan;
             Console.SetWindowSize(200, 49);
             Console.SetCursorPosition(0, 1);
-            Console.WriteLine("\t\t\t\t--------------------------" +
-                "\n\t------------------------|      Zoo Simulator     |-----------------------\n" +
-                "\t\t\t\t--------------------------");
-
-            Console.Write("\tThe Name of your Zoo: ");
+            Instruction instruction = new Instruction();
+            instruction.Caption();
+            Console.Write("\t\u001b[31mThe Name of your Zoo: \u001b[30m");
             string? nameZoo = Console.ReadLine();
             Zoo myZoo = new Zoo(nameZoo);
-            Console.Write($"\tHow much types of enclosures will be in {nameZoo}: ");
+            Console.Write($"\t\u001b[31mHow much types of enclosures will be in {nameZoo}: \u001b[30m");
             int quantity = int.Parse(Console.ReadLine());
-            Console.WriteLine("\n\tCreate Enclosures for animals");
             for (int w = 0; w < quantity; w++)
             {
-                Console.Write($"\tThe Name of {w + 1}. Enclosure: ");
+                Console.Write($"\t\u001b[31mThe Name of {w + 1}. Enclosure: \u001b[30m");
                 string enclosure = Console.ReadLine();
-                Console.Write("\tInput width and length of the enclosure: ");
+                Console.Write("\t\u001b[31mInput width and length of the enclosure: \u001b[30m");
                 string widthAndHeight = Console.ReadLine();
                 string[] size = widthAndHeight.Split(' ');
-                Console.WriteLine("\n\tThe Type of the enclosure\n" +
-                    "\t---------------------------" +
-                    "\n\t| Open | Close | Aquarium |\n" +
-                    "\t---------------------------");
-                Console.Write("\tEnter the Type: ");
+                instruction.PrintTableType();
+                Console.Write("\t\u001b[31mEnter the Type: \u001b[30m");
                 string type = Console.ReadLine();
 
                 Enclosure Enclosure = new Enclosure(enclosure, int.Parse(size[0]), int.Parse(size[1]), type);
 
-                Instruction instructionAnimals = new Instruction();
-                instructionAnimals.PrintTypeAnimals();
-                Console.Write("\tSelect all the species you want: ");
+                
+                instruction.PrintTypeAnimals();
+                Console.Write("\t\u001b[31mSelect all the species you want: \u001b[30m");
                 string? speciesQuantity = Console.ReadLine();
                 string[] quantityAnimals = speciesQuantity.Split(' ');
                 foreach (var singleQuantity in quantityAnimals) 
                 {
-                    Console.Write($"\tHow much {instructionAnimals.Animals[int.Parse(singleQuantity) - 1]} you want in the enclosure: ");
+                    Console.Write($"\n\t\u001b[31mHow much {instruction.Animals[int.Parse(singleQuantity) - 1]} you want in the enclosure: \u001b[30m");
                     int quantityBeast = int.Parse(Console.ReadLine());
 
                     for (int y = 0; y < quantityBeast; y++)
                     {
-                        Console.Write($"\tGive the {y + 1}. {instructionAnimals.Animals[int.Parse(singleQuantity) - 1]} a name: ");
+                        Console.Write($"\t\u001b[31mGive the {y + 1}. {instruction.Animals[int.Parse(singleQuantity) - 1]} a name: \u001b[30m");
                         string? name = Console.ReadLine();
-                        Console.Write("\tHow old is they: ");
+                        Console.Write("\t\u001b[31mHow old is they: \u001b[30m");
                         int old = int.Parse(Console.ReadLine());
-                        Console.Write("\tWhat gender is they male/female: ");
+                        Console.Write("\t\u001b[31mWhat gender is they male/female: \u001b[30m");
                         string? gender = Console.ReadLine();
-                        Console.Write("\tWhere does they live: ");
+                        Console.Write("\t\u001b[31mWhere does they live: \u001b[30m");
                         string? placeLive = Console.ReadLine();
-                        Console.Write("\tWhat the type of food does they eats: ");
+                        Console.Write("\t\u001b[31mWhat the type of food does they eats: \u001b[30m");
                         string? food = Console.ReadLine();
-                        Console.Write("\tIs they dangerous yes/no: ");
+                        Console.Write("\t\u001b[31mIs they dangerous yes/no: \u001b[30m");
                         string? answer = Console.ReadLine();
 
-                        Animal animal = new Animal(instructionAnimals.Animals[int.Parse(singleQuantity) - 1], name, old, gender, placeLive, food, answer);
+                        Animal animal = new Animal(instruction.Animals[int.Parse(singleQuantity) - 1], name, old, gender, placeLive, food, answer);
                         Enclosure.AddAnimal(animal);
-                        Console.Clear();
-                        Console.SetCursorPosition(20, 20);
+
                     }
                 }
-
-                Instruction instructionPlants = new Instruction();
-                instructionPlants.PrintTypePlants();
-                Console.Write("\tSelect all the plants you want: ");
+                Console.ReadLine();
+                Console.Clear();
+                instruction.PrintTypePlants();
+                Console.Write("\t\u001b[31mSelect all the plants you want: \u001b[30m");
                 string? quantityTypes = Console.ReadLine();
                 string[] quantityPlants = quantityTypes.Split(' ');
                 foreach (var singleQuantity in quantityPlants)
                 {
-                    Console.Write($"\tHow much {instructionPlants.Plants[int.Parse(singleQuantity) - 1]} you want in the enclosure: ");
+                    Console.Write($"\n\t\u001b[31mHow much {instruction.Plants[int.Parse(singleQuantity) - 1]} you want in the enclosure: \u001b[30m");
                     int quantityGreen = int.Parse(Console.ReadLine());
 
                     for (int y = 0; y < quantityGreen; y++)
                     {
-                        Console.Write("\tSize of the plant: ");
+                        Console.Write("\t\u001b[31mSize of the plant: \u001b[30m");
                         string widthAndHeightPlant = Console.ReadLine();
                         string[] sizePlant = widthAndHeightPlant.Split(' ');
-                        Console.Write("\tAge of the plant: ");
+                        Console.Write("\t\u001b[31mAge of the plant: \u001b[30m");
                         int age = int.Parse(Console.ReadLine());
 
-                        Plant plant = new Plant(instructionPlants.Plants[int.Parse(singleQuantity) - 1], age);
-                        TypePlant typePlant = new TypePlant(instructionPlants.Plants[int.Parse(singleQuantity) - 1], int.Parse(sizePlant[0]), int.Parse(sizePlant[1]), age);
+                        Plant plant = new Plant(instruction.Plants[int.Parse(singleQuantity) - 1], age);
+                        TypePlant typePlant = new TypePlant(instruction.Plants[int.Parse(singleQuantity) - 1], int.Parse(sizePlant[0]), int.Parse(sizePlant[1]), age);
                         Enclosure.AddPlant(typePlant);
-                        Console.Clear();
-                        Console.SetCursorPosition(20, 20);
                     }
                 }
-
+                Console.ReadLine();
+                Console.Clear();
                 myZoo.AddEnclosure(Enclosure);
 
+                Enclosure.PrintAnimalsList();
                 Enclosure.FillEnclosure();
                 for (int q = 0; q < myZoo.Enclosures[w].Plants.Count; q++)
                     Enclosure.PrintPlants(myZoo.Enclosures[w].Plants[q].Symbol);
                 Enclosure.PrintAnimal();
 
-                Enclosure.PrintAnimalsList();
-
-                Console.SetCursorPosition(40, 10);
-                Console.WriteLine("Tap to continue");
+                Console.WriteLine("\t\u001b[31mTap to continue");
                 Console.ReadLine();
                 Console.Clear();
+                Console.SetCursorPosition(4, 5);
             }
 
             Console.CursorVisible = false;
@@ -114,10 +106,10 @@ namespace ZooSimulator
             int i = 0;
             while (true)
             {
-                Console.Clear();
                 Console.SetCursorPosition(20, 20);
-                Console.WriteLine("Tap Left and Right to go next enclosure");
+                Console.WriteLine("\u001b[31mTap Left and Right to go next enclosure");
                 key = Console.ReadKey();
+                Console.Clear();
                 if (key.Key == ConsoleKey.RightArrow)
                 {
                     i++;
@@ -149,12 +141,12 @@ namespace ZooSimulator
                 }
                 else if (key.Key == ConsoleKey.Escape)
                 {
-                    Console.WriteLine("You've left the program");
+                    Console.WriteLine("\u001b[31mYou've left the program");
                     break;
                 }
                 else if (key.Key == ConsoleKey.M)
                 {
-                    Console.WriteLine("\t\tMenu");
+                    Console.WriteLine("\t\t\u001b[31mMenu");
                     for(int l = 0; l < myZoo.Enclosures[i].Animals.Count; l++)
                         Console.Write($" {l + 1} {myZoo.Enclosures[i].Animals[l].Species}");
 
@@ -164,7 +156,7 @@ namespace ZooSimulator
                         sound = int.Parse(Console.ReadLine());
                         if (sound < 1 || sound > myZoo.Enclosures[i].Animals.Count)
                         {
-                            Console.WriteLine("You've left the sound menu");
+                            Console.WriteLine("\u001b[31mYou've left the sound menu");
                             break;
                         }
                         myZoo.Enclosures[i].Animals[sound - 1].MakeSound();
@@ -172,7 +164,6 @@ namespace ZooSimulator
                     }
                     
                 }
-
             }
 
             Console.ReadLine();
