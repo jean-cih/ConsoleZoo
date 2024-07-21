@@ -35,7 +35,7 @@
             get { return type; }
             set
             {
-                if(value.ToLower() == "open" || value.ToLower() == "close" || value.ToLower() == "aquarium")
+                if(value.ToLower() == "open" || value.ToLower() == "close" || value.ToLower() == "aquarium" || value.ToLower() == "permafrost" || value.ToLower() == "aerial")
                     type = value;
                 else
                     Console.WriteLine("\t\u001b[31mIncorrect type of the enclosure");
@@ -80,7 +80,7 @@
         public void PrintAnimalsList() 
         {
             Console.SetCursorPosition(Width + 5, Height);
-            Console.WriteLine("\u001b[31mThere are animals at the Zoo now:");
+            Console.WriteLine("\u001b[34mThere are animals at the Zoo now:");
             for (int i = 0; i < Animals.Count; i++)
             {
                 Console.SetCursorPosition(Width + 15, Height + 2 + i);

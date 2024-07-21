@@ -2,8 +2,8 @@
 {
     public class Instruction
     {
-        public string[] Animals = new string[] { "Lion", "Zebra", "Elephant", "Cheetah", "Tiger", "Platypus", "Bear", "Ape", "Camel", "Squirrel", "Turtle", "Penguin" };
-        public string[] Plants = new string[] { "Little Bush", "Middle Bush", "Big Bush", "Grass", "Little Tree", "Middle Tree", "Big Tree" };
+        public string[] Animals = new string[] { "Lion", "Zebra", "Elephant", "Cheetah", "Tiger", "Platypus", "Bear", "Ape", "Camel", "Squirrel", "Turtle", "Nothing" };
+        public string[] Plants = new string[] { "Little Bush", "Middle Bush", "Big Bush", "Grass", "Little Tree", "Middle Tree", "Big Tree", "Nothing" };
 
         public void Caption()
         {
@@ -20,9 +20,9 @@
         {
             Console.ForegroundColor = ConsoleColor.Black;
             Console.WriteLine("\n\tThe Type of the enclosure\n" +
-                    "\t---------------------------" +
-                    "\n\t| Open | Close | Aquarium |\n" +
-                    "\t---------------------------");
+                    "\t-------------------------------------------------" +
+                    "\n\t| Open | Close | Aquarium | Permafrost | Aerial |\n" +
+                    "\t-------------------------------------------------");
             Console.ResetColor();
             Console.BackgroundColor = ConsoleColor.Cyan;
         }
@@ -58,7 +58,7 @@
 
             for (int j = 1; j <= Plants.Length; j++)
             {
-                if (j == Plants.Length / 2 + 2 || j == 1)
+                if (j == Plants.Length / 2 + 1 || j == 1)
                 {
                     Console.Write("\n\t");
                     for (int l = 0; l < 55; l++)

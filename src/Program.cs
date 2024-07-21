@@ -1,6 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-
-namespace ZooSimulator
+﻿namespace ZooSimulator
 {
     internal class Program
     {
@@ -36,6 +34,8 @@ namespace ZooSimulator
                 string[] quantityAnimals = speciesQuantity.Split(' ');
                 foreach (var singleQuantity in quantityAnimals) 
                 {
+                    if (int.Parse(singleQuantity) == 12)
+                        break;
                     Console.Write($"\n\t\u001b[31mHow much {instruction.Animals[int.Parse(singleQuantity) - 1]} you want in the enclosure: \u001b[30m");
                     int quantityBeast = int.Parse(Console.ReadLine());
 
@@ -67,6 +67,8 @@ namespace ZooSimulator
                 string[] quantityPlants = quantityTypes.Split(' ');
                 foreach (var singleQuantity in quantityPlants)
                 {
+                    if (int.Parse(singleQuantity) == 8)
+                        break;
                     Console.Write($"\n\t\u001b[31mHow much {instruction.Plants[int.Parse(singleQuantity) - 1]} you want in the enclosure: \u001b[30m");
                     int quantityGreen = int.Parse(Console.ReadLine());
 
@@ -96,18 +98,17 @@ namespace ZooSimulator
                 Console.WriteLine("\t\u001b[31mTap to continue");
                 Console.ReadLine();
                 Console.Clear();
-                Console.SetCursorPosition(4, 5);
+                Console.SetCursorPosition(4, 2);
             }
 
             Console.CursorVisible = false;
-            Console.Clear();
 
             ConsoleKeyInfo key;
             int i = 0;
             while (true)
             {
-                Console.SetCursorPosition(20, 20);
-                Console.WriteLine("\u001b[31mTap Left and Right to go next enclosure");
+                Console.SetCursorPosition(3, myZoo.Enclosures[i].Height - 5);
+                Console.WriteLine("\u001b[31mTap Left and Right to go next enclosure\tTap M to listen to the sound of animals");
                 key = Console.ReadKey();
                 Console.Clear();
                 if (key.Key == ConsoleKey.RightArrow)
@@ -119,12 +120,9 @@ namespace ZooSimulator
                     myZoo.Enclosures[i].FillEnclosure();
                     for (int q = 0; q < myZoo.Enclosures[i].Plants.Count; q++)
                     {
-                        Console.SetCursorPosition(20, 20);
                         myZoo.Enclosures[i].PrintPlants(myZoo.Enclosures[i].Plants[q].Symbol);
                     }
-                    Console.SetCursorPosition(20, 20);
                     myZoo.Enclosures[i].PrintAnimal();
-                    Console.SetCursorPosition(20, 20);
                     myZoo.Enclosures[i].PrintAnimalsList();
                 }
                 else if (key.Key == ConsoleKey.LeftArrow)
@@ -146,13 +144,14 @@ namespace ZooSimulator
                 }
                 else if (key.Key == ConsoleKey.M)
                 {
-                    Console.WriteLine("\t\t\u001b[31mMenu");
-                    for(int l = 0; l < myZoo.Enclosures[i].Animals.Count; l++)
-                        Console.Write($" {l + 1} {myZoo.Enclosures[i].Animals[l].Species}");
-
                     int sound;
                     while (true)
                     {
+                        Console.Clear();
+                        Console.WriteLine("\t\t\u001b[31mMenu");
+                        for(int l = 0; l < myZoo.Enclosures[i].Animals.Count; l++)
+                            Console.Write($" {l + 1} {myZoo.Enclosures[i].Animals[l].Species}");
+                        Console.Write("\n\u001b[30m\t");
                         sound = int.Parse(Console.ReadLine());
                         if (sound < 1 || sound > myZoo.Enclosures[i].Animals.Count)
                         {
